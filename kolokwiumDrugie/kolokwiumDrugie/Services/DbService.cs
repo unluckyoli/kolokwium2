@@ -1,11 +1,8 @@
 ﻿using kolokwiumDrugie.Models;
-
 namespace kolokwiumDrugie.Services;
 using Microsoft.EntityFrameworkCore;
 using kolokwiumDrugie.Data;
 using kolokwiumDrugie.DTOs;
-using System.Linq;
-using System.Threading.Tasks;
 
 public class DbService : IDbService 
 {
@@ -64,6 +61,9 @@ public class DbService : IDbService
 
         return character.Backpacks.ToList();
     }
+    
+    
+    
     
     public async Task<CharacterDto?> GetCharacterByIdAsync(int characterId)
     {

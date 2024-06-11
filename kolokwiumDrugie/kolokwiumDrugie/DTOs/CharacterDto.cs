@@ -1,8 +1,6 @@
 ﻿namespace kolokwiumDrugie.DTOs;
-using System;
-using System.Collections.Generic;
 
-    public class CharacterDto
+public class CharacterDto
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;

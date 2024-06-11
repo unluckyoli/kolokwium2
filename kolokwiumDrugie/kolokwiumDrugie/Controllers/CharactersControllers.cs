@@ -1,7 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using kolokwiumDrugie.DTOs;
 using kolokwiumDrugie.Services;
 
@@ -19,8 +16,7 @@ namespace kolokwiumDrugie.Controllers
         }
 
         [HttpPost("{characterId}/backpacks")]
-        public async Task<IActionResult> AddItemsToBackpack(int characterId,
-            [FromBody] AddItemsToBackpackRequest request)
+        public async Task<IActionResult> AddItemsToBackpack(int characterId, [FromBody] AddItems request)
         {
             if (request == null || request.ItemIds.Count == 0)
                 return BadRequest("ItemIds list is required.");

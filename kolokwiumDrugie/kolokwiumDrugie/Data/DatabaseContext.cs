@@ -34,7 +34,8 @@ using Microsoft.EntityFrameworkCore;
 
 
             modelBuilder.Entity<Characters>().HasData(
-                new Characters { Id = 1, FirstName = "John", LastName = "Kowalski", CurrentWeight = 43, MaxWeight = 200 }
+                new Characters { Id = 1, FirstName = "John", LastName = "Kowalski", CurrentWeight = 43, MaxWeight = 200 },
+                new Characters { Id = 2, FirstName = "Leo", LastName = "Messi", CurrentWeight = 70, MaxWeight = 175 }
 
             );
 
@@ -57,9 +58,9 @@ using Microsoft.EntityFrameworkCore;
             );
 
             modelBuilder.Entity<Character_titles>().HasData(
-                new Character_titles { CharacterId = 1, TitleId = 1, AcquiredAt = new DateTime(2024, 6, 10) },
-                new Character_titles { CharacterId = 1, TitleId = 2, AcquiredAt = new DateTime(2024, 6, 9) },
-                new Character_titles { CharacterId = 1, TitleId = 3, AcquiredAt = new DateTime(2024, 6, 8) }
+                new Character_titles { CharacterId = 1, TitleId = 1, AcquiredAt = new DateTime(1410, 6, 10) },
+                new Character_titles { CharacterId = 1, TitleId = 2, AcquiredAt = new DateTime(2137, 6, 9) },
+                new Character_titles { CharacterId = 2, TitleId = 3, AcquiredAt = new DateTime(2003, 7, 19) }
             );
         }
     }
