@@ -20,4 +20,3 @@ public class Backpacks
     public Characters Characters { get; set; } = null!;
     
 }
-

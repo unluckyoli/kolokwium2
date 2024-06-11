@@ -7,3 +7,4 @@ namespace kolokwiumDrugie.DTOs;
         [Required]
         public List<int> ItemIds { get; set; } = new List<int>();
     }
+    

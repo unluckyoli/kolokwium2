@@ -14,4 +14,3 @@ public class Items
 
     public ICollection<Backpacks> Backpacks { get; set; } = new HashSet<Backpacks>();
 }
-

@@ -21,4 +21,3 @@ public class Characters
     public ICollection<Character_titles> CharacterTitles { get; set; } = new HashSet<Character_titles>();
 
 }
-

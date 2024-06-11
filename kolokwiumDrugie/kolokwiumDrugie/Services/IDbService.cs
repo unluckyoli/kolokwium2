@@ -1,6 +1,5 @@
 ﻿using kolokwiumDrugie.DTOs;
 using kolokwiumDrugie.Models;
-
 namespace kolokwiumDrugie.Services;
 
 public interface IDbService
